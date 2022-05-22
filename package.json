@@ -1,16 +1,16 @@
 {
-  "name": "uniswap-v2-subgraph",
+  "name": "meter-solidly",
   "version": "1.0.0",
-  "repository": "https://github.com/graphprotocol/uniswap-v2-subgraph",
+  "repository": "https://github.com/trungtin/meter-ve-subgraph",
   "license": "GPL-3.0-or-later",
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
-    "create": "graph create trungtin/meter-solidly-subgraph --node https://api.thegraph.com/deploy/",
-    "create-local": "graph create trungtin/meter-solidly-subgraph --node http://127.0.0.1:8020",
-    "remove-local": "graph remove trungtin/meter-solidly-subgraph --node http://127.0.0.1:8020",
+    "create": "graph create meter/meter-solidly --node https://api.thegraph.com/deploy/",
+    "create-local": "graph create meter/meter-solidly --node http://127.0.0.1:8020",
+    "remove-local": "graph remove meter/meter-solidly --node http://127.0.0.1:8020",
     "build": "graph build",
-    "deploy": "graph deploy trungtin/meter-solidly-subgraph --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
-    "deploy-local": "graph deploy trungtin/meter-solidly-subgraph --debug --ipfs http://127.0.0.1:5001 --node http://127.0.0.1:8020",
+    "deploy": "graph deploy meter/meter-solidly --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "deploy-local": "graph deploy meter/meter-solidly --debug --ipfs http://127.0.0.1:5001 --node http://127.0.0.1:8020",
     "watch-local": "graph deploy graphprotocol/Uniswap2 --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
   },
   "devDependencies": {
