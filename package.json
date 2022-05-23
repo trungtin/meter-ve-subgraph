@@ -5,11 +5,12 @@
   "license": "GPL-3.0-or-later",
   "scripts": {
     "codegen": "graph codegen --output-dir src/types/",
-    "create": "graph create meter/meter-solidly --node https://api.thegraph.com/deploy/",
+    "create": "graph create --node http://graph-on-testnet.meter.io:8020/ meter/meter-solidly",
+    "remove": "graph remove --node http://graph-on-testnet.meter.io:8020/ meter/meter-solidly",
+    "deploy": "graph deploy --node http://graph-on-testnet.meter.io:8020/ --ipfs http://graph-on-testnet.meter.io:5001 meter/meter-solidly",
     "create-local": "graph create meter/meter-solidly --node http://127.0.0.1:8020",
     "remove-local": "graph remove meter/meter-solidly --node http://127.0.0.1:8020",
     "build": "graph build",
-    "deploy": "graph deploy meter/meter-solidly --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
     "deploy-local": "graph deploy meter/meter-solidly --debug --ipfs http://127.0.0.1:5001 --node http://127.0.0.1:8020",
     "watch-local": "graph deploy graphprotocol/Uniswap2 --watch --debug --node http://127.0.0.1:8020/ --ipfs http://localhost:5001"
   },
